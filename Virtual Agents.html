@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Agent AI</title>
+    <style>
+        /* Color Palette */
+        :root {
+            --primary-blue: #007BFF;
+            --primary-white: #FFFFFF;
+            --secondary-gray: #2F4F4F;
+            --secondary-green: #32CD32;
+            --accent-silver: #C0C0C0;
+            --accent-purple: #6A0DAD;
+        }
+
+        /* Font Choices */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--primary-white);
+            color: var(--secondary-gray);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-blue), var(--accent-purple));
+            color: var(--primary-white);
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1em;
+        }
+
+        nav ul li a {
+            color: var(--primary-white);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-green);
+        }
+
+        footer {
+            background-color: var(--secondary-gray);
+            color: var(--primary-white);
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        button {
+            background-color: var(--primary-blue);
+            color: var(--primary-white);
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--secondary-green);
+        }
+
+        /* Add more styles as needed */
+    </style>
+    <!-- Add your CSS and meta tags here -->
+</head>
+<body>
+    <!-- ...existing code... -->
+    <header>
+        <h1>Virtual Agent AI</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book a Call</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Page Content -->
+        <section id="home">
+            <h2>Welcome to Virtual Agent AI</h2>
+            <p>We build AI Agents for Automation.</p>
+        </section>
+        <!-- Booking Page Content -->
+        <section id="book">
+            <h2>Book a Call</h2>
+            <form action="/book" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <!-- Articles Page Content -->
+        <section id="articles">
+            <h2>Articles</h2>
+            <article>
+                <h3>Article Title 1</h3>
+                <p>Summary of article 1...</p>
+                <a href="article1.html">Read more</a>
+            </article>
+            <article>
+                <h3>Article Title 2</h3>
+                <p>Summary of article 2...</p>
+                <a href="article2.html">Read more</a>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+        <!-- Payment Page Content -->
+        <section id="payment">
+            <h2>Payment</h2>
+            <form action="/pay" method="post">
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="service1">Service 1</option>
+                    <option value="service2">Service 2</option>
+                    <!-- Add more services as needed -->
+                </select>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Virtual Agent AI. All rights reserved.</p>
+    </footer>
+    <!-- ...existing code... -->
+</body>
+</html>
